@@ -25,6 +25,7 @@ client.on('ready', () => {
  client.user.setActivity(" Crystal Server",{type: 'PLAYING'})
 
 });
+var dat = {} 
 
 
 client.on("ready", () => {
