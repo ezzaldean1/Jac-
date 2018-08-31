@@ -12,7 +12,19 @@ const Canvas = require('canvas');
 
 const client = new Discord.Client();
 
+client.on('ready', () => {
 
+  console.log('---------------');
+
+  console.log(' Gold Bot Is OnMusic')
+
+  console.log('---------------')
+
+  client.user.setStatus("Online")
+
+ client.user.setActivity(" Crystal Server",{type: 'PLAYING'})
+
+});
 
 
 client.on("ready", () => {
