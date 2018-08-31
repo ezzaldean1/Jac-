@@ -118,15 +118,16 @@ const adminprefixx = "#";
 
 const devs = ['470500980342128650'];
 
-client.on('message', message => {
+clientt.on('message', message => {
 
   var argresult = message.content.split(` `).slice(1).join(' ');
 
     if (!devs.includes(message.author.id)) return;
 
-if (message.content.startsWith(adminprefixx + 'setplaying')) {
+if (message.content.startsWith(adminprefixx+ 'setplaying')) {
 
-  client.user.setGame(argresult);
+
+  clientt.user.setGame(argresult);
 
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 
@@ -134,7 +135,7 @@ if (message.content.startsWith(adminprefixx + 'setplaying')) {
 
   if (message.content.startsWith(adminprefixx + 'setname')) {
 
-client.user.setUsername(argresult).then
+clientt.user.setUsername(argresult).then
 
     message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
 
@@ -144,7 +145,7 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 
   if (message.content.startsWith(adminprefixx + 'setavatar')) {
 
-client.user.setAvatar(argresult);
+clientt.user.setAvatar(argresult);
 
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
 
@@ -152,7 +153,7 @@ client.user.setAvatar(argresult);
 
 if (message.content.startsWith(adminprefixx + 'setT')) {
 
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+  clientt.user.setGame(argresult, "https://www.twitch.tv/idk");
 
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 
