@@ -161,7 +161,7 @@ if (message.content.startsWith(adminprefixx + 'setT')) {
 
 });
 
-clientt.login(process.env.BOT_TOKEN); 
+clientt.login(process.env.BOT_TOKENN); 
 
 
 client.login(process.env.BOT_TOKEN); 
