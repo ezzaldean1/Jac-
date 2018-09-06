@@ -99,7 +99,7 @@ client.on('message', async message => {
      message.member.addRole(muterole);
     const embed500 = new Discord.RichEmbed()
       .setTitle("Muted Ads")
-            .addField(**  You Have Been Muted ** , **Reason : Sharing Another Discord Link**)
+            .addField('**  You Have Been Muted ** , **Reason : Sharing Another Discord Link**')
             .setColor("c91616")
             .setThumbnail(${message.author.avatarURL})
             .setAuthor(message.author.username, message.author.avatarURL)
